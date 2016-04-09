@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài tập 3</title>
+	<script type="text/javascript">
+		var orderTotal = 0;
+		function collectOrder(numOrdered){
+			if(numOrdered > 0){
+				alert("Bạn đã đặt " + orderTotal);
+				orderTotal = numOrdered * 5;
+			}
+			return orderTotal;
+		}
+		// orderTotal đã thay đổi sau khi biến khai báo và trước hàm trả về.
+		// Không được tùy tiện thay đổi.
+	</script>
+</head>
+<body></body>
+</html>

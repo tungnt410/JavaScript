@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+	<title>Đối tượng date</title>
+</head>
+<body>
+	<p id="dateField">&nbsp;</p>
+	<script type="text/javascript">
+		var myDate = new Date();
+		var dateString = myDate.toLocaleDateString() + " " + myDate.toLocaleTimeString();
+		var dateLoc = document.getElementById("dateField");
+		dateLoc.innerHTML = "Xin chào - Trang web được tải lúc " + dateString;
+	</script>
+</body>
+</html>

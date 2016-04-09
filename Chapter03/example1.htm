@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function cubeme(incomingNum){
+			if(incomingNum == 1){
+				return "Bạn đang làm gì đấy?";
+			} else {
+				return Math.pow(incomingNum, 3); //Tính hàm lũy thừa 3
+			}
+		}
+	</script>
+	<title>Ví dụ Chương 3</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var theNum = 2;
+		var finalNum = cubeme(theNum);
+		if(isNaN(finalNum)){ //Kiểm tra finalNum có phải là số không.
+			alert("1 lũy thừa bao nhiêu cũng = 1.");
+		} else {
+			alert("Lập phương của " + theNum + " là " + finalNum);
+		}
+	</script>
+</body>
+</html> 

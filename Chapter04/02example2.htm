@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>substring, slice, substr, concat, toUpperCase & toLowerCase</title>
+	<script type="text/javascript">
+		var myString = "Biến là một chuỗi."
+		// substring
+		alert(myString.substring(3));
+		alert(myString.substring(3,9)); // Trả về ký tự 3 -> 9.
+		
+		// slice
+		alert(myString.slice(3));
+		alert(myString.slice(3, 9));	// Trả về ký tự 3 -> 9.
+		
+		//substr
+		alert(myString.substr(3));
+		alert(myString.substr(3, 9)); // Trả về từ ký tự 3 và + 9 ký tự sau.
+		
+		//concat - ghép câu
+		var firstString = "Hello ";
+		var finalString = firstString.concat("World.");
+		alert(finalString);
+		
+		//toUpperCase & toLowerCase
+		alert(myString.toUpperCase()); // IN HOA
+		alert(myString.toLowerCase()); // thường
+		
+	</script>
+</head>
+<body></body>
+</html>

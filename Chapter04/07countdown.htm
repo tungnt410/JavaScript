@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+	<title>Đối tượng date</title>
+</head>
+<body>
+	<p id="dateField">&nbsp;</p>
+	<script type="text/javascript">
+		var today = new Date();
+		var then = new Date();
+		// Thiết lập là ngày 1/1/2012
+		then.setFullYear(2017, 0, 1);
+		var diff = then.getTime() - today.getTime();
+		diff = Math.floor(diff / (1000 * 60 * 60 * 24));
+		var dateLoc = document.getElementById("dateField");
+		dateLoc.innerHTML = "Còn " + diff + " ngày cho đến ngày 1/1/2017";
+	</script>
+</body>
+</html>

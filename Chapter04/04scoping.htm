@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="UTF-8"/>
+<html>
+<head>
+	<title>Ví dụ về phạm vi</title>
+	<script type="text/javascript">
+		var aNewVariable = "có phạm vi toàn cục.";
+		function doSomething(incomingBits){
+			alert("Biến toàn cục bên trong hàm: " + aNewVariable);
+			alert("Biến cục bộ bên trong hàm: " + incomingBits);
+		}
+	</script>
+</head>
+<body>
+	<script type="text/javascript">
+		var incomingBits = " phải được định nghĩa nếu cần."
+		doSomething(" có phạm vi cục bộ trong hàm.");
+		alert("Biến toàn cục bên ngoài hàm: " + aNewVariable);
+		alert("Biến toàn cục bên ngoài hàm: " + incomingBits);
+	</script>
+</body>
+</html>
